@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Fraunces', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+header {
+  background-image: url("../images/mobile/image-header.jpg");
+  width: 100vw;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+header nav.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2.5rem;
+}
+
+header h1 {
+  font-family: 'Fraunces', sans-serif;
+  letter-spacing: 7px;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+header .arrow {
+  position: absolute;
+  bottom: 24%;
+  left: 45%;
+}
+
+#testimonials h2 {
+  font-size: 1.35rem;
+  letter-spacing: 3px;
+  color: #818498;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#testimonials .card {
+  margin: 6rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#testimonials .card img {
+  border-radius: 50%;
+  max-width: 100px;
+}
+
+#testimonials .card .text {
+  text-align: center;
+  margin: 2rem 0;
+  color: #5a636c;
+}
+
+#testimonials .card .name {
+  margin-bottom: 1rem;
+  color: #23303e;
+}
+
+#testimonials .card .profession {
+  font-size: 1rem;
+  color: #a7abae;
+}
+
+#img-gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+#img-gallery img {
+  width: 100%;
+}
+
+footer {
+  background-color: #458c7e;
+  color: #25564b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer svg.logo {
+  margin: 4rem auto;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 8rem 0;
+}
+
+footer .socials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 1440px) {
+  #about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+  #about img {
+    width: 100%;
+  }
+  #about .item2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #about .item1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #about .item3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #about .item4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  #about .item5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  #about .item6 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  #testimonials .cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25%;
+        grid-template-columns: 25% 25% 25%;
+    gap: 4rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #img-gallery {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+}
+/*# sourceMappingURL=main.css.map */

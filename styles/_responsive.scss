@@ -1,0 +1,52 @@
+@media (min-width: 1440px) {
+  // about
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    img {
+      width: 100%;
+    }
+
+    .item2 {
+      order:1;
+    }
+
+    .item1 {
+      order:2
+    }
+
+    .item3 {
+      order:3;
+    }
+
+    .item4 {
+      order:4;
+    }
+
+    .item5 {
+      order:5
+    }
+
+    .item6 {
+      order: 6;
+    }
+  }
+
+  // testimonials
+  #testimonials{
+  .cards {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 4rem;
+    justify-content: center;
+  }
+}
+
+  // img gallery
+  #img-gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}

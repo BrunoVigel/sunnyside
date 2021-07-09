@@ -1,0 +1,37 @@
+#testimonials {
+  h2 {
+    font-size: 1.35rem;
+    letter-spacing: 3px;
+    color: $Dark-grayish-blue;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .card {
+    margin: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+      max-width: 100px;
+    }
+
+    .text {
+      text-align: center;
+      margin: 2rem 0;
+      color: $Very-dark-grayish-blue;
+    }
+
+    .name {
+      margin-bottom: 1rem;
+      color: $Very-dark-desaturated-blue;
+    }
+
+    .profession {
+      font-size: 1rem;
+      color: $Grayish-blue;
+    }
+  }
+}

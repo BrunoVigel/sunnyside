@@ -1,0 +1,27 @@
+footer {
+  background-color: $Dark-moderate-cyan;
+  color: $Dark-desaturated-cyan;
+  display: flex;
+  flex-direction: column;
+
+  svg.logo {
+    margin: 4rem auto;
+  }
+  
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 8rem 0;
+  }
+
+  .socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 6rem;
+  }
+}

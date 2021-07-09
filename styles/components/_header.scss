@@ -1,0 +1,33 @@
+// ------------------------------- header ------------------------------------
+header {
+  background-image: url('../images/mobile/image-header.jpg');
+  width: 100vw;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 2.5rem;
+  }
+
+  h1 {
+    font-family: 'Fraunces', sans-serif;
+    letter-spacing: 7px;
+    font-size: 2.5rem;
+    color: $White;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .arrow {
+    position:absolute;
+    bottom: 24%;
+    left: 45%;
+  }
+}
