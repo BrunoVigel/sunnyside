@@ -32,7 +32,6 @@ html {
 
 header {
   background-image: url("../images/mobile/image-header.jpg");
-  width: 100vw;
   height: 80vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -66,6 +65,46 @@ header .arrow {
   position: absolute;
   bottom: 24%;
   left: 45%;
+}
+
+.text-item {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.text-item h3 {
+  font-size: 2rem;
+  padding: 0 5rem;
+}
+
+.text-item p {
+  margin: 2rem;
+  padding: 0 1.7rem;
+}
+
+.image-text-item {
+  position: relative;
+}
+
+.image-text-item div {
+  text-align: center;
+  position: absolute;
+  bottom: 12%;
+}
+
+.image-text-item div h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 #testimonials h2 {
@@ -147,10 +186,11 @@ footer ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 0 8rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4.5rem;
+  padding: 0 0 6rem 0;
 }
 
 footer .socials {
@@ -170,6 +210,16 @@ footer .socials {
 }
 
 @media (min-width: 1440px) {
+  .container {
+    padding: 0 2rem;
+  }
+  header {
+    background-image: url("../images/desktop/image-header.jpg");
+  }
+  header .arrow {
+    bottom: 40%;
+    left: 49%;
+  }
   #about {
     display: -ms-grid;
     display: grid;
@@ -210,6 +260,38 @@ footer .socials {
     -webkit-box-ordinal-group: 7;
         -ms-flex-order: 6;
             order: 6;
+  }
+  #about .text-item {
+    text-align: start;
+    height: auto;
+  }
+  #about .text-item .text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 12rem;
+  }
+  #about .text-item .text-container h3 {
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  #about .text-item .text-container p {
+    padding: 0;
+    margin: 3rem 0;
+  }
+  #about .image-text-item div {
+    padding: 0 16rem;
+  }
+  #about .image-text-item div h3 {
+    margin-bottom: 2.5rem;
   }
   #testimonials .cards {
     display: -ms-grid;
