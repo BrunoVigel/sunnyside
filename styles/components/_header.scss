@@ -15,6 +15,68 @@ header {
     padding-top: 2.5rem;
   }
 
+  nav .menu {
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+    transition: 0.2s;
+  }
+  
+  nav .menu ul {
+    display: none;
+  }
+  
+  /* Mostrar menu */
+  
+  nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+  
+    background-color: white;
+  
+    height: 35vh;
+    width: 80vw;
+  
+    position: fixed;
+    top: 10%;
+    left: 10%;
+  
+    display: grid;
+    place-content: center;
+    z-index: 2;
+  }
+  
+  /* toggle menu*/
+  .toggle {
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  nav.show .menu ul {
+    display: grid;
+    
+    li {
+      text-align: center;
+      
+      a {
+        color:$Dark-grayish-blue;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+      &:hover {
+        color: $Very-dark-desaturated-blue;
+        background-color:$Yellow ;
+      }
+      }
+    }
+  }
+  
+  nav.show ul.grid {
+    gap: 2rem;
+    position: fixed;
+    top: 18%;
+    left: 38%;
+  }
+
   h1 {
     font-family: 'Fraunces', sans-serif;
     letter-spacing: 7px;

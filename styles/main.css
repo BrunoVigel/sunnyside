@@ -43,6 +43,8 @@ header {
   background-position: center;
   background-size: cover;
   position: relative;
+  /* Mostrar menu */
+  /* toggle menu*/
 }
 
 header nav.container {
@@ -56,6 +58,65 @@ header nav.container {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 2.5rem;
+}
+
+header nav .menu {
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header nav .menu ul {
+  display: none;
+}
+
+header nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+  background-color: white;
+  height: 35vh;
+  width: 80vw;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  z-index: 2;
+}
+
+header .toggle {
+  cursor: pointer;
+  z-index: 2;
+}
+
+header nav.show .menu ul {
+  display: -ms-grid;
+  display: grid;
+}
+
+header nav.show .menu ul li {
+  text-align: center;
+}
+
+header nav.show .menu ul li a {
+  color: #818498;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+header nav.show .menu ul li a:hover {
+  color: #23303e;
+  background-color: #fad400;
+}
+
+header nav.show ul.grid {
+  gap: 2rem;
+  position: fixed;
+  top: 18%;
+  left: 38%;
 }
 
 header h1 {
@@ -236,6 +297,32 @@ footer .socials {
   }
   header {
     background-image: url("../images/desktop/image-header.jpg");
+  }
+  header nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    gap: 2rem;
+  }
+  header nav .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+  }
+  header nav .menu ul li a {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    color: white;
+  }
+  header nav .menu ul li a:hover {
+    color: #23303e;
+    background-color: white;
+    border-radius: 2rem;
+  }
+  header .toggle {
+    display: none;
   }
   header .arrow {
     bottom: 40%;

@@ -8,6 +8,35 @@
   header {
     background-image: url("../images/desktop/image-header.jpg");
 
+    nav .menu {
+      opacity: 1;
+      visibility: visible;
+      top: 0;
+      gap: 2rem;
+    }
+  
+    nav .menu ul {
+      display: flex;
+      gap: 2rem;
+    }
+  
+    nav .menu ul li a {
+      font-size: 1rem;
+      font-weight: 400;
+      padding: 1rem 2rem;
+      color: white;
+
+      &:hover {
+        color: $Very-dark-desaturated-blue;
+        background-color: white;
+        border-radius: 2rem;
+      }
+    }
+  
+    .toggle {
+      display: none;
+    }
+
     .arrow {
       bottom: 40%;
       left: 49%;
