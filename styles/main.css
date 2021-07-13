@@ -19,7 +19,13 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+picture {
+  width: 100%;
+  height: 100%;
 }
 
 html {
@@ -64,10 +70,11 @@ header h1 {
 header .arrow {
   position: absolute;
   bottom: 24%;
-  left: 45%;
+  left: 46%;
+  cursor: pointer;
 }
 
-.text-item {
+#about .text-item {
   height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,29 +89,43 @@ header .arrow {
   text-align: center;
 }
 
-.text-item h3 {
+#about .text-item h3 {
   font-size: 2rem;
   padding: 0 5rem;
+  color: #23303e;
 }
 
-.text-item p {
+#about .text-item p {
   margin: 2rem;
   padding: 0 1.7rem;
+  color: #5a636c;
 }
 
-.image-text-item {
+#about .text-item a {
+  color: #23303e;
+}
+
+#about .image-text-item {
   position: relative;
 }
 
-.image-text-item div {
+#about .image-text-item div {
   text-align: center;
   position: absolute;
   bottom: 12%;
 }
 
-.image-text-item div h3 {
+#about .image-text-item div h3 {
   margin-bottom: 1rem;
   font-size: 2rem;
+}
+
+#about:nth-child(1) {
+  color: #458c7e;
+}
+
+#about:nth-child(2) {
+  color: #19536b;
 }
 
 #testimonials h2 {
@@ -189,7 +210,7 @@ footer ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 4.5rem;
+  gap: 3.5rem;
   padding: 0 0 6rem 0;
 }
 
@@ -209,7 +230,7 @@ footer .socials {
   padding-bottom: 6rem;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .container {
     padding: 0 2rem;
   }
@@ -219,6 +240,9 @@ footer .socials {
   header .arrow {
     bottom: 40%;
     left: 49%;
+  }
+  header br {
+    display: none;
   }
   #about {
     display: -ms-grid;
@@ -288,7 +312,7 @@ footer .socials {
     margin: 3rem 0;
   }
   #about .image-text-item div {
-    padding: 0 16rem;
+    padding: 0 15rem;
   }
   #about .image-text-item div h3 {
     margin-bottom: 2.5rem;
