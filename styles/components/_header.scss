@@ -44,6 +44,19 @@ header {
     display: grid;
     place-content: center;
     z-index: 2;
+
+    &::after {
+      content: "";
+      width: 0; 
+      height: 0; 
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      
+      border-right: 20px solid white;
+      position: absolute;
+      top: -7%;
+      right: 0;
+    }
   }
   
   /* toggle menu*/

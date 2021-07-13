@@ -87,6 +87,18 @@ header nav.show .menu {
   z-index: 2;
 }
 
+header nav.show .menu::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid white;
+  position: absolute;
+  top: -7%;
+  right: 0;
+}
+
 header .toggle {
   cursor: pointer;
   z-index: 2;
