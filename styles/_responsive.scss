@@ -51,7 +51,7 @@
   // about
   #about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr 1fr;
 
     img {
@@ -108,11 +108,16 @@
 
 
     .image-text-item {
+
       div {
-        padding: 0 15rem;
+        left: 20%;
 
         h3 {
           margin-bottom: 2.5rem;
+        }
+
+        p {
+          max-width: 500px;
         }
       }
     }

@@ -347,8 +347,8 @@ footer .socials {
   #about {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
   }
@@ -412,10 +412,13 @@ footer .socials {
     margin: 3rem 0;
   }
   #about .image-text-item div {
-    padding: 0 15rem;
+    left: 20%;
   }
   #about .image-text-item div h3 {
     margin-bottom: 2.5rem;
+  }
+  #about .image-text-item div p {
+    max-width: 500px;
   }
   #testimonials .cards {
     display: -ms-grid;
