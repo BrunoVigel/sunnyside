@@ -110,6 +110,7 @@ header nav.show .menu ul li a {
 header nav.show .menu ul li a:hover {
   color: #23303e;
   background-color: #fad400;
+  text-transform: uppercase;
 }
 
 header nav.show ul.grid {
