@@ -52,7 +52,6 @@
   #about {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
 
     img {
       width: 100%;
@@ -126,11 +125,12 @@
   // testimonials
   #testimonials{
   .cards {
-    display: grid;
-    grid-template-columns: 25% 25% 25%;
-    gap: 4rem;
+    display: flex;
+    gap: 3rem;
     justify-content: center;
     }
+
+    
   }
 
   // img gallery
