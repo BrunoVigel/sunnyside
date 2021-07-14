@@ -7,7 +7,7 @@
 
 body {
   font-size: 18px;
-  font-family: 'Fraunces', serif;
+  font-family: 'Barlow', serif;
 }
 
 ul {
@@ -164,6 +164,7 @@ header .arrow {
 }
 
 #about .text-item h3 {
+  font-family: 'Fraunces', sans-serif;
   font-size: 2rem;
   padding: 0 5rem;
   color: #23303e;
@@ -190,6 +191,7 @@ header .arrow {
 }
 
 #about .image-text-item div h3 {
+  font-family: 'Fraunces', sans-serif;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
@@ -203,6 +205,7 @@ header .arrow {
 }
 
 #testimonials h2 {
+  font-family: 'Fraunces', sans-serif;
   font-size: 1.35rem;
   letter-spacing: 3px;
   color: #818498;
@@ -236,6 +239,7 @@ header .arrow {
 }
 
 #testimonials .card .name {
+  font-family: 'Fraunces', sans-serif;
   margin-bottom: 1rem;
   color: #23303e;
 }
@@ -270,7 +274,8 @@ footer {
           flex-direction: column;
 }
 
-footer svg.logo {
+footer a svg.logo {
+  display: block;
   margin: 4rem auto;
 }
 
@@ -288,6 +293,14 @@ footer ul {
   padding: 0 0 6rem 0;
 }
 
+footer ul li a {
+  color: #25564b;
+}
+
+footer ul li a:hover {
+  color: white;
+}
+
 footer .socials {
   display: -ms-grid;
   display: grid;
@@ -302,6 +315,12 @@ footer .socials {
           justify-content: center;
   margin: 0 auto;
   padding-bottom: 6rem;
+}
+
+footer .socials #hover-icon:hover {
+  fill: white;
+  -webkit-transition: ease-in 0.2s all;
+  transition: ease-in 0.2s all;
 }
 
 @media (min-width: 768px) {
