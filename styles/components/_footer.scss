@@ -35,7 +35,7 @@ footer {
     margin: 0 auto;
     padding-bottom: 6rem;
 
-    #hover-icon {
+    .hover-icon {
       &:hover {
         fill: $White;
         transition: ease-in 0.2s all;

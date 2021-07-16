@@ -317,7 +317,7 @@ footer .socials {
   padding-bottom: 6rem;
 }
 
-footer .socials #hover-icon:hover {
+footer .socials .hover-icon:hover {
   fill: white;
   -webkit-transition: ease-in 0.2s all;
   transition: ease-in 0.2s all;
