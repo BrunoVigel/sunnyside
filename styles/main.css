@@ -20,7 +20,7 @@ a {
 
 img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 picture {
@@ -238,7 +238,8 @@ header .arrow {
 
 #testimonials .card img {
   border-radius: 50%;
-  max-width: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 #testimonials .card .text {
@@ -450,7 +451,6 @@ footer .socials .hover-icon:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 3rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
